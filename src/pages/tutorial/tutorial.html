@@ -1,0 +1,45 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Saltar</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+      <h2 class="slide-title">
+        Bienvenido a <b>Habits.AI</b>
+      </h2>
+      <p>
+        Habits.Ai <b>es una app</b> que te permite cambiar tus hábitos mediante una conversación con tu coach, que es un bot con conversaciones 
+        precargadas
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+      <h2 class="slide-title" >¿Cómo hablar con el chatbot? </h2>
+      <p><b>Escribe tu clave </b>para inicializar tu hábito y empieza a platicar con el chatbot mediante un si o un no</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>
+      <h2 class="slide-title">Eventos </h2>
+      <p>Encuentra eventos con <b>Coaches</b> cerca de tu ciudad y apoyate para cambiar tu hábito </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">¿Listo para empezar?</h2>
+      <button ion-button icon-end large clear (click)="startApp()">
+        Continuar
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>
