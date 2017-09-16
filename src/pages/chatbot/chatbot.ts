@@ -3,12 +3,21 @@ import { Component } from '@angular/core';
 import {
   ActionSheet,
   ActionSheetController,
+<<<<<<< HEAD
+=======
+  ActionSheetOptions,
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
   Config,
   NavController
 } from 'ionic-angular';
 
 import { ConferenceData } from '../../providers/conference-data';
 
+<<<<<<< HEAD
+=======
+import { SessionDetailPage } from '../session-detail/session-detail';
+import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 
 // TODO remove
 export interface ActionSheetButton {

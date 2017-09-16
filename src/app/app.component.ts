@@ -8,6 +8,10 @@ import { Storage } from '@ionic/storage';
 import { AboutPage } from '../pages/about/about';
 import { AccountPage } from '../pages/account/account';
 import { LoginPage } from '../pages/login/login';
+<<<<<<< HEAD
+=======
+import { MapPage } from '../pages/map/map';
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
@@ -32,7 +36,11 @@ export interface PageInterface {
 @Component({
   templateUrl: 'app.template.html'
 })
+<<<<<<< HEAD
 export class HabitsApp {
+=======
+export class ConferenceApp {
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
   // the root nav is a child of the root app component
   // @ViewChild(Nav) gets a reference to the app's root nav
   @ViewChild(Nav) nav: Nav;
@@ -43,6 +51,10 @@ export class HabitsApp {
   appPages: PageInterface[] = [
     { title: 'Calendario', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Chatbot', name: 'TabsPage', component: TabsPage, tabComponent: ChatbotPage, index: 1, icon: 'contacts' },
+<<<<<<< HEAD
+=======
+    { title: 'Mapa', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
     { title: 'Acerca', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
   ];
   loggedInPages: PageInterface[] = [

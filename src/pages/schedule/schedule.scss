@@ -1,4 +1,5 @@
 $categories: (
+<<<<<<< HEAD
  ionic: color($colors, secondary),
  angular: #3AC1ED,
  communication: #3AC1ED,
@@ -9,6 +10,18 @@ $categories: (
  food: #3AC1ED,
  documentation: #3AC1ED,
  navigation: #3AC1ED,
+=======
+ ionic: color($colors, primary),
+ angular: #AC282B,
+ communication: #8E8D93,
+ tooling: #FE4C52,
+ services: #FD8B2D,
+ design: #FED035,
+ workshop: #69BB7B,
+ food: #3BC7C4,
+ documentation: #B16BE3,
+ navigation: #6600CC,
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 );
 
 @function auxiliary-categories() {

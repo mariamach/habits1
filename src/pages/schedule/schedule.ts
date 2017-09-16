@@ -12,6 +12,10 @@ import { ConferenceData } from '../../providers/conference-data';
 import { UserData } from '../../providers/user-data';
 
 import { SessionDetailPage } from '../session-detail/session-detail';
+<<<<<<< HEAD
+=======
+import { ScheduleFilterPage } from '../schedule-filter/schedule-filter';
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 
 
 @Component({
@@ -59,7 +63,22 @@ export class SchedulePage {
     });
   }
 
+<<<<<<< HEAD
 
+=======
+  presentFilter() {
+    let modal = this.modalCtrl.create(ScheduleFilterPage, this.excludeTracks);
+    modal.present();
+
+    modal.onWillDismiss((data: any[]) => {
+      if (data) {
+        this.excludeTracks = data;
+        this.updateSchedule();
+      }
+    });
+
+  }
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 
   goToSessionDetail(sessionData: any) {
     // go to the session detail page

@@ -13,13 +13,25 @@
       </ion-segment-button>
     </ion-segment>
 
+<<<<<<< HEAD
+=======
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentFilter()">
+        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+      </button>
+    </ion-buttons>
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
   </ion-navbar>
 
   <ion-toolbar no-border-top>
     <ion-searchbar color="primary"
                    [(ngModel)]="queryText"
                    (ionInput)="updateSchedule()"
+<<<<<<< HEAD
                    placeholder="Buscar">
+=======
+                   placeholder="Search">
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
@@ -69,6 +81,18 @@
       No hay sesiones encontradas
   </ion-list-header>
 
+<<<<<<< HEAD
+=======
+  <ion-fab bottom right #fab>
+    <button ion-fab><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
+      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
 
 
 </ion-content>

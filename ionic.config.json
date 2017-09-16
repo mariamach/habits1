@@ -1,6 +1,10 @@
 {
   "name": "habits1",
+<<<<<<< HEAD
   "app_id": "",
+=======
+  "app_id": "3f20652c",
+>>>>>>> 240fbe1ed9e9e667480d8f876c2c8523c2b7bdbd
   "type": "ionic-angular",
   "integrations": {}
 }
