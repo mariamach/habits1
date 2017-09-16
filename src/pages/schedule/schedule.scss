@@ -1,0 +1,25 @@
+$categories: (
+ ionic: color($colors, secondary),
+ angular: #3AC1ED,
+ communication: #3AC1ED,
+ tooling: #3AC1ED,
+ services: #3AC1ED,
+ design: #3AC1ED,
+ workshop: #3AC1ED,
+ food: #3AC1ED,
+ documentation: #3AC1ED,
+ navigation: #3AC1ED,
+);
+
+@function auxiliary-categories() {
+  @return map-remove($categories);
+}
+
+page-schedule {
+  @each $track, $value in auxiliary-categories() {
+   ion-item-sliding[track=#{$track}] ion-label {
+     border-left: 2px solid $value;
+     padding-left: 10px;
+   }
+  }
+}
